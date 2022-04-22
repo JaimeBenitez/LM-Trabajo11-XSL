@@ -12,15 +12,23 @@
                     <tr bgcolor="#CCFFFF">
                         <th style="text-align:left">Titulo</th>
                         <th style="text-align:left">Autor</th>
-                        <th style="text-align:left">Año</th>
+                        <th style="text-align:left">AÃ±o</th>
                         <th style="text-align:left">Editorial</th>
                     </tr>
                     <xsl:for-each select="libro">
                         <tr>
-                            <td><xsl:value-of select="titulo"/></td>
-                            <td><xsl:value-of select="autor"/></td>
-                            <td><xsl:value-of select="anyo"/></td>
-                            <td><xsl:value-of select="editorial"/></td>
+                            <td>
+                                <xsl:value-of select="titulo"/>
+                            </td>
+                            <td>
+                                <xsl:value-of select="autor"/>
+                            </td>
+                            <td>
+                                <xsl:value-of select="anyo"/>
+                            </td>
+                            <td>
+                                <xsl:value-of select="editorial"/>
+                            </td>
                         </tr>
                     </xsl:for-each>
                 </table>
